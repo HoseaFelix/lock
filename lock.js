@@ -1,6 +1,6 @@
 (async function(){
   try{
-    const cfgUrl = "https://raw.githubusercontent.com/YOUR/REPO/main/project-config.json"; // your config URL
+    const cfgUrl = "https://hoseafelix.github.io/lock/project-config.json"; // your config URL
     const res = await fetch(cfgUrl + "?t=" + Date.now(), {cache: "no-cache"});
     if(!res.ok) return;
     const cfg = await res.json();
